@@ -1,6 +1,6 @@
 {
   "name": "insomnia-plugin-github-theme",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "GitHub Themes for Insomnia",
   "main": "main.js",
   "repository": {

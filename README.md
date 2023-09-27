@@ -8,7 +8,7 @@ This is a port of [GitHub's VS Code themes](https://github.com/primer/github-vsc
 
 1. Open Preferences in Insomnia
 2. Open the Plugins tab
-3. Paste `insomnia-plugin-github-themes` into the `npm-package-name` field
+3. Paste `insomnia-plugin-github-theme` into the `npm-package-name` field
 4. Click on Install Plugin
 5. Open the Themes tab
 6. Select your favorite GitHub theme
