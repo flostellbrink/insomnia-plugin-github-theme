@@ -1,0 +1,31 @@
+{
+  "name": "insomnia-plugin-github-theme",
+  "version": "1.0.0",
+  "description": "GitHub Themes for Insomnia",
+  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flostellbrink/insomnia-plugin-github-theme.git"
+  },
+  "keywords": [
+    "github",
+    "theme",
+    "insomnia",
+    "insomnia-plugin"
+  ],
+  "insomnia": {
+    "name": "github-theme",
+    "displayName": "GitHub Themes",
+    "description": "GitHub Themes for Insomnia",
+    "publisher": {
+      "name": "Florian Stellbrink",
+      "icon": "https://avatars.githubusercontent.com/u/2600682"
+    }
+  },
+  "author": "Florian Stellbrink",
+  "license": "MIT",
+  "dependencies": {
+    "@primer/primitives": "^7.14.0",
+    "chroma-js": "^2.4.2"
+  }
+}
