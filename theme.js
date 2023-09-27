@@ -14,10 +14,10 @@ const { getColors } = require("./colors");
 //    e.g. "textLink.foreground": themes({ light: scale.blue[5], light_high_contrast: scale.blue[5], light_colorblind: scale.blue[5], dark: scale.blue[2], dark_high_contrast: scale.blue[3], dark_colorblind: scale.blue[2], dark_dimmed: scale.blue[3] }),
 
 /**
- * @param {{theme: string, name: string}} options
+ * @param {{theme: string, name: string, zen: boolean}} options
  * @returns {import('./types').PluginTheme}
  */
-function getTheme({ theme, name }) {
+function getTheme({ theme, name, zen }) {
   const themes = (options) => options[theme]; // Usage: themes({ light: "lightblue", light_high_contrast: "lightblue", light_colorblind: "lightblue", dark: "darkblue", dark_high_contrast: "darkblue", dark_colorblind: "darkblue", dark_dimmed: "royalblue" })
   const rawColors = getColors(theme);
   const color = changeColorToHexAlphas(rawColors);
@@ -111,11 +111,25 @@ function getTheme({ theme, name }) {
     xl: lightDark(scale.gray[4], scale.gray[4]),
   };
 
+  /**
+   * @type {import('./types').ThemeBlock['rawCss']}
+   */
+  const zenCss = `
+    .grid-template-app-layout {
+      grid-template-rows: 0 1fr 0;
+    }
+    .grid-template-app-layout > *:first-child,
+    .grid-template-app-layout > *:last-child {
+      display: none !important;
+    }
+  `;
+
   return {
-    name: `github-${theme}`,
+    name: `github-${theme}${zen ? "-zen" : ""}`,
     displayName: name,
 
     theme: {
+      rawCss: zen ? zenCss : undefined,
       background: globalBackground,
       foreground: globalForeground,
       highlight: globalHighlight,

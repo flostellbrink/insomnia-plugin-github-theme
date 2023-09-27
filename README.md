@@ -24,3 +24,7 @@ All modern GitHub themes are available:
 - GitHub Dark High Contrast
 - GitHub Dark Colorblind
 - GitHub Dark Dimmed
+
+## Zen Mode
+
+Each theme comes with a Zen Mode variant. These are inspired by VS Code Zen mode and are designed to minimize distractions. They remove the main app header and footer, leaving only the content area to focus on.
