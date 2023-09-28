@@ -1,6 +1,6 @@
 # GitHub Themes for Insomnia
 
-![Screenshot](screenshot.png)
+![Screenshot](assets/screenshot.png)
 
 This is a port of [GitHub's VS Code themes](https://github.com/primer/github-vscode-theme) for [Insomnia](https://insomnia.rest).
 
