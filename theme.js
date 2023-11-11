@@ -129,7 +129,7 @@ function getTheme({ theme, name, zen }) {
     displayName: name,
 
     theme: {
-      rawCss: zen ? zenCss : undefined,
+      rawCss: zen ? zenCss : "",
       background: globalBackground,
       foreground: globalForeground,
       highlight: globalHighlight,
